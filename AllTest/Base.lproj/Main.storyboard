@@ -92,6 +92,7 @@
                     </view>
                     <connections>
                         <outlet property="clv" destination="bSR-qP-rK7" id="QUD-JK-fTg"/>
+                        <outlet property="nsVheight" destination="hqS-WC-9ab" id="z5G-YX-yf5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcY-jC-TiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

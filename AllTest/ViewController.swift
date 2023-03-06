@@ -9,6 +9,7 @@ import UIKit
 class ViewController: UIViewController {
     var buttonTitles = ["xxx","aaaaaaa"]
     
+    @IBOutlet weak var nsVheight: NSLayoutConstraint!
     @IBOutlet weak var clv: UICollectionView!
     
     override func viewDidLoad() {
@@ -20,13 +21,20 @@ class ViewController: UIViewController {
         clv.collectionViewLayout = layout
     }
     
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let height = clv.collectionViewLayout.collectionViewContentSize.height
+        // set the height constraint of the parent view
+        nsVheight.constant = height
+    }
+
     @IBAction func tap1(_ sender: Any) {
         buttonTitles = ["dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","x"]
             clv.reloadData()
             clv.collectionViewLayout.invalidateLayout()
             clv.layoutIfNeeded()
-        updateViewHeight()
+//        updateViewHeight()
     }
     
     func updateViewHeight(){
