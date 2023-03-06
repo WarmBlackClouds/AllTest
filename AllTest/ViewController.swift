@@ -9,7 +9,7 @@ import UIKit
 class ViewController: UIViewController {
     var buttonTitles = ["xxx","aaaaaaa"]
     
-    @IBOutlet weak var nsVheight: NSLayoutConstraint!
+    @IBOutlet weak var clvHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var clv: UICollectionView!
     
     override func viewDidLoad() {
@@ -20,22 +20,24 @@ class ViewController: UIViewController {
         let layout = JYEqualCellSpaceFlowLayout(.left, 10)
         clv.collectionViewLayout = layout
         
+//        let height = clv.collectionViewLayout.collectionViewContentSize.height
+//        // set the height constraint of the clv's superview
+//        nsVheight.constant = height
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
         let height = clv.collectionViewLayout.collectionViewContentSize.height
-        // set the height constraint of the clv's superview
-        nsVheight.constant = height
+        clvHeightConstraint.constant = height
     }
     
     @IBAction func tap1(_ sender: Any) {
         buttonTitles = ["dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","x"]
-            clv.reloadData()
-            clv.collectionViewLayout.invalidateLayout()
-            clv.layoutIfNeeded()
-
-            let height = clv.collectionViewLayout.collectionViewContentSize.height
-            // set the height constraint of the clv's superview
-            nsVheight.constant = height
+        clv.reloadData()
+        clv.collectionViewLayout.invalidateLayout()
+        clv.layoutIfNeeded()
     }
-    
+
     func updateViewHeight(){
         let contentSize = clv.collectionViewLayout.collectionViewContentSize
         let clvHeight = contentSize.height
