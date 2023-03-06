@@ -29,7 +29,7 @@ class JYEqualCellSpaceFlowLayout: UICollectionViewFlowLayout {
         super.init()
         scrollDirection = UICollectionView.ScrollDirection.vertical
         minimumLineSpacing = 5
-        sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        sectionInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
         estimatedItemSize = UICollectionViewFlowLayout.automaticSize
     }
     convenience init(_ cellType:AlignType){

@@ -13,7 +13,8 @@ class ButtonCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        self.layer.cornerRadius = 5
+        self.layer.masksToBounds = true
         self.backgroundColor = .gray
     }
     
