@@ -19,22 +19,21 @@ class ViewController: UIViewController {
         clv.delegate = self
         let layout = JYEqualCellSpaceFlowLayout(.left, 10)
         clv.collectionViewLayout = layout
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
         
         let height = clv.collectionViewLayout.collectionViewContentSize.height
-        // set the height constraint of the parent view
+        // set the height constraint of the clv's superview
         nsVheight.constant = height
     }
-
+    
     @IBAction func tap1(_ sender: Any) {
         buttonTitles = ["dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","dabnfhenwi","cxmkj","cxnzuiw","x"]
             clv.reloadData()
             clv.collectionViewLayout.invalidateLayout()
             clv.layoutIfNeeded()
-//        updateViewHeight()
+
+            let height = clv.collectionViewLayout.collectionViewContentSize.height
+            // set the height constraint of the clv's superview
+            nsVheight.constant = height
     }
     
     func updateViewHeight(){
