@@ -26,6 +26,19 @@ class ViewController: UIViewController {
             clv.reloadData()
             clv.collectionViewLayout.invalidateLayout()
             clv.layoutIfNeeded()
+        updateViewHeight()
+    }
+    
+    func updateViewHeight(){
+        let contentSize = clv.collectionViewLayout.collectionViewContentSize
+        let clvHeight = contentSize.height
+        let clvParentView = clv.superview
+        clvParentView?.frame.size.height = clvHeight
+        DispatchQueue.main.async { [self] in
+            let clvParentView = clv.superview
+            clvParentView?.frame.size.height = clvHeight
+        }
+
     }
 } 
 
