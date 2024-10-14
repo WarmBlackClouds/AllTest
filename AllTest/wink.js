@@ -54,5 +54,9 @@ if ($request.url.indexOf(user) != -1) {
     chxm1023.data.favorites_count = 999000;
     chxm1023.data.be_like_count = 999000;
 }
+// 强制禁用缓存，确保每次从服务器获取数据
+$response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+$response.headers['Pragma'] = 'no-cache';
+$response.headers['Expires'] = '0';
 
 $done({body: JSON.stringify(chxm1023)});
