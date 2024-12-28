@@ -1,0 +1,12 @@
+proxies:
+  - {"type":"trojan","password":"3744110890291830784","server":"welcomed-chimp.boa152.lol","port":443,"name":"welcomed-chimp.boa152.lol:443","sni":"welcomed-chimp.boa152.lol"}
+  - {"type":"trojan","password":"3744110890291830784","server":"pleased-airedale.boa152.lol","port":443,"name":"pleased-airedale.boa152.lol:443","sni":"pleased-airedale.boa152.lol"}
+  - {"type":"trojan","password":"3744110890291830784","server":"fluent-bat.treefrog761.one","port":443,"name":"fluent-bat.treefrog761.one:443","sni":"fluent-bat.treefrog761.one"}
+  - {"type":"trojan","password":"3744110890291830784","server":"fleet-weevil.boa152.lol","port":443,"name":"fleet-weevil.boa152.lol:443","sni":"fleet-weevil.boa152.lol"}
+  - {"type":"trojan","password":"3744110890291830784","server":"patient-ghost.treefrog761.one","port":443,"name":"patient-ghost.treefrog761.one:443","sni":"patient-ghost.treefrog761.one"}
+  - {"type":"trojan","password":"3744110890291830784","server":"related-hawk.treefrog761.one","port":443,"name":"related-hawk.treefrog761.one:443","sni":"related-hawk.treefrog761.one"}
+  - {"type":"trojan","password":"3744110890291830784","server":"together-oarfish.boa152.lol","port":443,"name":"together-oarfish.boa152.lol:443","sni":"together-oarfish.boa152.lol"}
+  - {"type":"trojan","password":"3744110890291830784","server":"equipped-mouse.treefrog761.one","port":443,"name":"equipped-mouse.treefrog761.one:443","sni":"equipped-mouse.treefrog761.one"}
+  - {"type":"trojan","password":"3744110890291830784","server":"super-goblin.treefrog761.one","port":443,"name":"super-goblin.treefrog761.one:443","sni":"super-goblin.treefrog761.one"}
+  - {"type":"trojan","password":"3744110877700530176","server":"national-gar.boa152.lol","port":443,"name":"national-gar.boa152.lol:443","sni":"national-gar.boa152.lol"}
+  - {"type":"trojan","password":"3744110877700530176","server":"striking-shepherd.boa152.lol","port":443,"name":"striking-shepherd.boa152.lol:443","sni":"striking-shepherd.boa152.lol"}
